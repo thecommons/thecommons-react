@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import TheCommons from './TheCommons/TheCommons';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <TheCommons />,
   document.getElementById('root')
 );
