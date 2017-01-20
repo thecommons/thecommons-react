@@ -1,0 +1,13 @@
+body {
+    color: #231f20;
+    background-color: #ffffff;
+    font-family: 'futura-pt', sans-serif;
+    /*font-weight: 700;*/ /* heavy */
+    font-size: 20px;
+}
+
+#tc-content.container-fluid {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
