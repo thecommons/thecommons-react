@@ -1,0 +1,56 @@
+/* carousel slide definitions */
+
+.carousel .item .item-bg {
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.carousel,
+.carousel-inner,
+.carousel .item,
+.carousel .item *,
+.carousel .active {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* replace scroll with fade */
+/* TODO figure out why goes white first... */
+.carousel-inner .item,
+.carousel-inner .item .item-bg {
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.carousel-inner .item .item-bg,
+.carousel-inner .active.left .item-bg,
+.carousel-inner .active.right .item-bg {
+    opacity: 0;
+}
+
+.carousel-inner .active .item-bg,
+.carousel-inner .next.left .item-bg,
+.carousel-inner .prev.right .item-bg {
+    opacity: 1;
+}
+
+.carousel-inner .next .item-bg,
+.carousel-inner .prev .item-bg,
+.carousel-inner .active.left .item-bg,
+.carousel-inner .active.right .item-bg {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
